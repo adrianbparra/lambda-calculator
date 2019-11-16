@@ -22,7 +22,6 @@ const Specials = () => {
           <SpecialButton  
           key = {index}
           char = {spec}
-          value = {spec}
           />
          )
        })

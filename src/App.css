@@ -6,9 +6,10 @@
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
+    position: relative;
 }
 .display {
-    margin-top: 25px;
+
     height: 100px;
     width: 450px;
     border-radius: 50px;
@@ -18,7 +19,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-right: 8%;
+    margin: 25px auto 0 auto;
     font-size: 5.0rem;
   }
 .special_container{
@@ -26,6 +27,22 @@
     width: 70%;
     margin-left: 24px;
 }
+
+.special{
+    background-color: rgb(40, 81, 214) !important; 
+}
+
+.operators_container{
+    position: absolute;
+    right: 48px;
+    top: 198px;
+    display: flex;
+    flex-direction: column;
+}
+.operator_button{
+    width: 96px !important;
+}
+
 .number_container{
     width: 70%;
     height: auto;
@@ -33,7 +50,7 @@
 }
 
 .button{
-    margin: 6px;
+    margin: 10px;
     width: 25%;
     height: 81px;
     border-radius: 50px;
@@ -43,6 +60,11 @@
     font-size: 2rem;
     box-shadow: 6px 5px 5px black;
     cursor: pointer;
+}
+button:focus{
+    background-color: rgb(19, 48, 141);
+    border: 1px solid black;
+    outline: none;
 }
 
 .number_9{
