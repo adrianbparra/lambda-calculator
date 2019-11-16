@@ -2,6 +2,7 @@
     background-color: #c00025;
     width: 100%;
     max-width: 550px;
+    min-width: 550px;
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
@@ -20,27 +21,31 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
-
-.number_container{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.special_container{
+    margin-top: 24px;
     width: 70%;
-    height: 360px;
-
+    margin-left: 24px;
+}
+.number_container{
+    width: 70%;
+    height: auto;
+    margin-left: 24px;
 }
 
-.number_button{
+.button{
     margin: 6px;
     width: 25%;
     height: 81px;
     border-radius: 50px;
+    border: none;
     background-color: rgb(26, 67, 201);
     color: white;
     font-size: 2rem;
     box-shadow: 6px 5px 5px black;
+    cursor: pointer;
 }
 
 .number_9{
-    width: 50%;
+    width: 54%;
 }
+
