@@ -116,7 +116,7 @@ function App() {
       switch(selectedOperator) {
         case "/":
           answer = (firstDigit / secondDigit)
-          setAnswer(answer)
+          setAnswer(answer);
           break;
         case "*":
           answer = (firstDigit * secondDigit)
@@ -131,6 +131,10 @@ function App() {
           setAnswer(answer)
           break;        
       }
+
+      setFirstNum(answer);
+      setSelectedOperator("");
+      setSecondNum("");
       return
     }
 
