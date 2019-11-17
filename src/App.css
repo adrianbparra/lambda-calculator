@@ -22,6 +22,7 @@
     margin: 25px auto 0 auto;
     font-size: 5.0rem;
     padding: 0 32px;
+    overflow-x : auto;
   }
 .special_container{
     margin-top: 24px;
