@@ -9,7 +9,7 @@
     position: relative;
 }
 .display {
-
+    box-sizing: border-box;
     height: 100px;
     width: 450px;
     border-radius: 50px;
@@ -21,6 +21,7 @@
     align-items: flex-end;
     margin: 25px auto 0 auto;
     font-size: 5.0rem;
+    padding: 0 32px;
   }
 .special_container{
     margin-top: 24px;
@@ -28,8 +29,8 @@
     margin-left: 24px;
 }
 
-.special{
-    background-color: rgb(40, 81, 214) !important; 
+.special_button{
+    background-color: rgb(20, 53, 161) !important; 
 }
 
 .operators_container{
@@ -41,6 +42,7 @@
 }
 .operator_button{
     width: 96px !important;
+    background-color: rgb(26, 146, 146) !important;
 }
 
 .number_container{
@@ -62,12 +64,12 @@
     cursor: pointer;
 }
 button:focus{
-    background-color: rgb(19, 48, 141);
-    border: 1px solid black;
+    border: 3px solid rgb(255, 255, 255);
+    box-shadow: 2px 3px 5px black;
     outline: none;
 }
 
-.number_9{
+.numbers:nth-child(10){
     width: 54%;
 }
 

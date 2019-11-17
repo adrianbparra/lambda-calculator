@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./App.css";
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers";
 import Specials from "./components/ButtonComponents/SpecialButtons/Specials";
@@ -17,15 +17,58 @@ function App() {
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
 
+  // const [selectedNum, setSelectedNum] = useState("")
+
+  const [selectedSpecial, setSelectedSpecial] = useState();
+  const [selectedOperator, setSelectedOperator] = useState();
+
+  var [selFirstNum, setFirstNum] = useState("");
+  var [selSeconNum, setSecondNum] = useState("");
+  
+  
+
+  function numPressed(num) {
+    console.log(num)
+    console.log(selectedSpecial)
+    if(num == "C"){
+      setFirstNum("");
+      setSecondNum("");
+      return
+    }
+
+    //check if numbers
+    if(!isNaN(num)){
+      setFirstNum(selFirstNum + num)
+    }
+
+
+
+    
+    //check if have numbs already before operators.
+    //yes on nums already then check what operators
+
+    //c then clear all
+
+
+
+
+  }
+
+  console.log(selFirstNum)
+
+
+  // console.log(selectedNum);
+  // console.log(selectedSpecial);
+  // console.log(selectedOperator);
   return (
     <div className="container">
       <Logo />
-      <Display />
+      <Display selectedNum = {selFirstNum} selectedSpecial ={selectedSpecial} selectedOperator ={selectedOperator}/>
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        <Specials />
-        <Operators />
-        <Numbers />
+        <Specials calc = {numPressed}/>
+        <Operators calc = {numPressed}/>
+        <Numbers calc = {numPressed}/>
       </div>
     </div>
   );

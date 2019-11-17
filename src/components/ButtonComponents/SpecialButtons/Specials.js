@@ -7,7 +7,7 @@ import SpecialButton from "./SpecialButton"
 
 //Import your array data to from the provided data file
 
-const Specials = () => {
+const Specials = (props) => {
   // STEP 2 - add the imported data to state
 
   const [specialsVal, setSpecials] = useState(specials);
@@ -22,6 +22,8 @@ const Specials = () => {
           <SpecialButton  
           key = {index}
           char = {spec}
+
+          calc = {props.calc}
           />
          )
        })
